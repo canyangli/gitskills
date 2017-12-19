@@ -24,5 +24,7 @@ branch
          ...
       merge featurel
          ...
+    git add branch/notes;
+    git commit -m "xxx";
     git branch -d featurel;
     git push origin master;
