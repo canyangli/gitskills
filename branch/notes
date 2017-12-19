@@ -28,3 +28,5 @@ branch
     git commit -m "xxx";
     git branch -d featurel;
     git push origin master;
+
+    git log --greph  // 可以查看分支合并图
