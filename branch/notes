@@ -1,2 +1,11 @@
 branch
 1. create a new branch: dev
+
+    what have i done?
+    git checkout -b dev;
+    vi branch/notes;
+    git add branch/notes;
+    git commit -m "xxx";
+    git checkout master;
+    git merge dev;
+    git push origin master;
