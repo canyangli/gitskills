@@ -1,7 +1,6 @@
 branch
 1. create a new branch: dev
 
-    what have i done?
     git checkout -b dev;
     vi branch/notes;
     git add branch/notes;
@@ -9,4 +8,21 @@ branch
     git checkout master;
     git merge dev;
     git branch -d dev;
+    git push origin master;
+
+2. merge featurel: featurel
+
+    git branch featurel;
+    git checkout featurel;
+    vi branch/notes;
+    git add branch/notes;
+    git commit -m "xxx";
+    git checkout master;
+    vi branch/notes;
+    git commit -m "xxx";
+    git merge featurel;
+         ...
+      merge featurel
+         ...
+    git branch -d featurel;
     git push origin master;
