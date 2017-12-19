@@ -30,3 +30,5 @@ branch
     git push origin master;
 
     git log --greph  // 可以查看分支合并图
+    git log --graph --pretty=oneline --abbrev-commit
+    git merge --no-ff -m "mege with no-ff" featurel  // 默认使用fast forward，看不出来merge痕迹。no-ff禁用fast-forward，能看到此处曾做过merge
