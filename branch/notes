@@ -32,3 +32,18 @@ branch
     git log --greph  // 可以查看分支合并图
     git log --graph --pretty=oneline --abbrev-commit
     git merge --no-ff -m "mege with no-ff" featurel  // 默认使用fast forward，看不出来merge痕迹。no-ff禁用fast-forward，能看到此处曾做过merge
+
+2. stash: featurel
+    git stash;
+    git checkout master;
+    git add xxx;
+    git commit -m "xxx"
+    git checkout featurel;
+    git stash apply; git stash drop;/git stash pop;
+    git stash list;  // 查看stash
+    ...go on...
+
+    修复bug时，我们会通过新建bug分支进行修复，然后修复、合并、删除bug分支。
+    当手头工作没有完成，可以使用git stash保存工作现场，然后去修复bug，修复后再git stash pop恢复现场。
+    git stash apply也能恢复工作现场，恢复后stash不会清除，依然可以通过git stash list查看，可以使用git stash drop清除stash
+    git stash pop恢复的同时会把stash也清除，git stash list查看不到stash信息
